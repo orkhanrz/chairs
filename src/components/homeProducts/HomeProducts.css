@@ -8,7 +8,7 @@
 
 .homeProductsContent h1 {
 	text-align: center;
-	font-size: var(--fs-700);
+	font-size: var(--fs-600);
 	letter-spacing: 1px;
 	margin: 22px 0;
 }
