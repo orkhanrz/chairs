@@ -1,0 +1,43 @@
+.homeProducts {
+	padding: 32px 0;
+	margin: 32px 0;
+}
+
+.homeProductsContent h1 {
+	text-align: center;
+	font-size: var(--fs-700);
+	letter-spacing: 1px;
+	margin: 22px 0;
+}
+
+.homeProductsContent h2 {
+	text-align: center;
+	font-size: var(--fs-200);
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 32px 0;
+}
+
+.homeProductsList {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+}
+
+.homeProductsListItem {
+	text-align: center;
+	font-size: var(--fs-200);
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.homeProductsListImageWrapper {
+	aspect-ratio: 1;
+	margin-bottom: 32px;
+}
+
+.homeProductsListImageWrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

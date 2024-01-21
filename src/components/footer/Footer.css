@@ -1,0 +1,104 @@
+/* Footer */
+footer {
+	background-color: var(--brown-clr);
+	color: var(--white-clr);
+}
+
+footer .footerContent {
+	padding: 0px 16px;
+}
+
+footer .row1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 32px 0 80px 0;
+	border-bottom: 1px solid var(--gray-clr);
+}
+
+footer .row2 {
+	padding: 32px 0;
+    font-size: var(--fs-200);
+}
+
+footer .footerLogo {
+	width: 80px;
+	height: 80px;
+	background-color: var(--white-clr);
+	color: var(--brown-clr);
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	margin-bottom: 32px;
+}
+
+footer .footerLogo * {
+	font-size: 64px !important;
+}
+
+footer .footerInfo {
+	margin-bottom: 32px;
+}
+
+footer .footerInfo div {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+footer .footerInfo span {
+	margin-right: 8px;
+}
+
+footer .footerInfo p {
+	margin: 0;
+	font-size: var(--fs-200);
+}
+
+footer .footerSocial span {
+	margin-right: 16px;
+}
+
+footer .footerLinks {
+	font-size: var(--fs-200);
+}
+
+footer .footerLinks li {
+	margin-bottom: 16px;
+}
+
+footer .col3 h3 {
+	font-size: var(--fs-700);
+	letter-spacing: 1px;
+	margin: 0 0 22px 0;
+}
+
+footer .col3 p {
+	font-size: var(--fs-200);
+	margin: 0 0 32px 0;
+}
+
+footer .inputWrapper {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid var(--white-clr);
+}
+
+footer .inputWrapper input {
+	background-color: transparent;
+	border: none;
+	width: 100%;
+	outline: none;
+	padding: 16px 0;
+	color: var(--white-clr);
+	font-size: var(--fs-200);
+}
+
+footer .inputWrapper span {
+	cursor: pointer;
+}
+
+footer .inputWrapper span:hover,
+footer .inputWrapper span:focus {
+	color: var(--light-gray-clr);
+}
