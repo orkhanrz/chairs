@@ -1,0 +1,91 @@
+.map {
+    width: 100%;
+    height: 500px;
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
+
+.contactDetails {
+    margin: 0 16px 32px 16px;
+}
+
+.contactDetailsContent {
+    padding: 32px 0;
+    display: flex;
+    gap: 80px;
+}
+
+.contactDetailsLeft {
+    flex: 40%;
+}
+
+.contactDetailsLeft h1 {
+    font-size: var(--fs-200);
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+
+.contactDetails .formControl {
+    margin-bottom: 16px;
+}
+
+.contactDetails .formControl:first-child {
+    display: flex;
+    gap: 16px;
+}
+
+.contactDetails input, .contactDetails textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    border: 1px solid var(--gray-clr);
+    font-family: inherit;
+    font-size: var(--fs-200);
+    outline: none;
+}
+
+.contactDetails button {
+    padding: 16px;
+    background-color: var(--brown-clr);
+    color: var(--white-clr);
+    border: 1px solid var(--brown-clr);
+    letter-spacing: 1px;
+    font-size: var(--fs-200);
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+.contactDetails button:hover {
+    background-color: var(--white-clr);
+    border: 1px solid var(--brown-clr);
+    color: var(--brown-clr);
+}
+
+.contactDetailsRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-gray-clr);
+    flex: 60%;
+}
+
+.contactDetailsRightItem {
+    text-align: center;
+}
+
+.contactDetailsRightItem span {
+    font-size: 40px;
+}
+
+.contactDetailsRightItem h1 {
+    font-size: var(--fs-300);
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 8px 0 32px 0;
+}
+
+.contactDetailsRightItem p {
+    font-size: var(--fs-200);
+}

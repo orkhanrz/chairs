@@ -1,6 +1,9 @@
 .homeProducts {
-	padding: 32px 0;
-	margin: 32px 0;
+	margin: 32px 16px;
+}
+
+.homeProductsContent {
+	padding: 32px 0px;
 }
 
 .homeProductsContent h1 {

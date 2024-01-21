@@ -8,7 +8,7 @@ function Header() {
 		<div className="container">
 			<div className="headerContent">
 				<div className="headerLogo">
-					<Icon component={EventSeat}/>
+					<Link to="/"><Icon component={EventSeat}/></Link>
 				</div>
 				<ul className="headerNav">
 					<li><Link to="/">Ana səhifə</Link></li>

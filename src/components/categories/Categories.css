@@ -1,6 +1,10 @@
 /* Categories */
 .productCategories {
-	padding: 48px 0;
+	margin: 0 16px;
+}
+
+.productCategoriesContent {
+	padding: 48px 0px;
 }
 
 .productCategoriesContent h1 {
