@@ -13,7 +13,7 @@
 	background-color: var(--brown-clr);
 	color: var(--white-clr);
 	padding: 16px 32px;
-	border: none;
+	border: 1px solid var(--brown-clr);
 	text-transform: uppercase;
 	font-size: var(--fs-200);
 	font-weight: 300;
@@ -30,7 +30,7 @@
 }
 
 .bannerLeftContent {
-	margin-bottom: 144px;
+	margin-bottom: 160px;
 	position: absolute;
 	top: -300px;
 	opacity: 0;
@@ -63,21 +63,23 @@
 
 .bannerControls {
 	position: absolute;
-	bottom: 8px;
+	bottom: 16px;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
 .bannerControls span {
-	font-size: var(--fs-800);
-	padding: 8px;
+	font-size: var(--fs-700);
+	padding: 16px 20px;
 	cursor: pointer;
 }
 
 .bannerControlsLeft {
 	background-color: var(--brown-clr);
+	color: var(--white-clr);
 }
 
 .bannerControlsRight {
 	background-color: var(--white-clr);
+	color: var(--brown-clr);
 }

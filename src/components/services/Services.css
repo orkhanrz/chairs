@@ -1,0 +1,35 @@
+.aboutServices {
+    margin: 64px 16px;
+}
+
+.aboutServicesTitle {
+    text-align: center;
+    font-size: var(--fs-600);
+    margin-bottom: 32px;
+}
+
+.aboutServicesList {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.aboutServicesItem {
+    text-align: center;
+}
+
+.aboutServicesItem span {
+    font-size: var(--fs-900);
+    color: var(--gray-clr);
+}
+
+.aboutServicesItem h3 {
+    font-size: var(--fs-400);
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.aboutServicesItem p {
+    font-size: var(--fs-200);
+    color: var(--gray-clr);
+}

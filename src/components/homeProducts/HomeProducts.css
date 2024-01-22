@@ -1,16 +1,16 @@
 .homeProducts {
-	margin: 32px 16px;
+	margin: 16px;
 }
 
 .homeProductsContent {
-	padding: 32px 0px;
+	padding: 16px 0px;
 }
 
 .homeProductsContent h1 {
 	text-align: center;
 	font-size: var(--fs-600);
 	letter-spacing: 1px;
-	margin: 22px 0;
+	margin: 16px 0;
 }
 
 .homeProductsContent h2 {
@@ -18,29 +18,5 @@
 	font-size: var(--fs-200);
 	font-weight: 400;
 	letter-spacing: 1px;
-	margin: 32px 0;
-}
-
-.homeProductsList {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 16px;
-}
-
-.homeProductsListItem {
-	text-align: center;
-	font-size: var(--fs-200);
-	font-weight: 400;
-	cursor: pointer;
-}
-
-.homeProductsListImageWrapper {
-	aspect-ratio: 1;
-	margin-bottom: 32px;
-}
-
-.homeProductsListImageWrapper img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+	margin: 16px 0;
 }

@@ -32,6 +32,23 @@ header {
 .headerNav a {
     color: var(--gray-clr);
     font-size: var(--fs-200);
+    position: relative;
+}
+
+.headerNav a::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--brown-clr);
+    mix-blend-mode: color;
+    transition: width 500ms ease;
+}
+
+.headerNav a:hover::after, .headerNav a:focus::after {
+    width: 100%;
 }
 
 .headerRight {
@@ -42,4 +59,8 @@ header {
 .headerRight span {
     color: var(--gray-clr);
     cursor: pointer;
+}
+
+.headerRight span:hover, .headerRight span:focus {
+    color: var(--brown-clr);
 }

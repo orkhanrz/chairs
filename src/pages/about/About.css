@@ -1,0 +1,14 @@
+.about {
+    margin: 64px 16px;
+}
+
+.aboutTitle {
+    text-align: center;
+    font-size: var(--fs-700);
+}
+
+.aboutText {
+    font-size: var(--fs-200);
+    color: var(--gray-clr);
+    line-height: var(--fs-800);
+}

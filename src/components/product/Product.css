@@ -1,0 +1,24 @@
+.productsList {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
+	margin: 32px 0;
+}
+
+.product {
+	text-align: center;
+	font-size: var(--fs-200);
+	font-weight: 400;
+	cursor: pointer;
+}
+
+.productImageWrapper {
+	aspect-ratio: 1;
+	margin-bottom: 32px;
+}
+
+.productImageWrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
