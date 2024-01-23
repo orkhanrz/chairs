@@ -5,10 +5,11 @@
 .aboutTitle {
     text-align: center;
     font-size: var(--fs-700);
+    margin-bottom: 48px;
 }
 
 .aboutText {
     font-size: var(--fs-200);
     color: var(--gray-clr);
-    line-height: var(--fs-800);
+    line-height: var(--fs-700);
 }

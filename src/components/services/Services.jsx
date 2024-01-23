@@ -11,23 +11,23 @@ import {
 function Services() {
 	const [services] = useState([
 		{
-			title: "Plastik kartla odenis",
-			text: "Visa ve master kartlari ile odenis edin",
+			title: "Plastik kartla ödəniş",
+			text: "Visa və Master kartları ilə ödəniş edin",
 			image: CreditCard,
 		},
 		{
-			title: "Plastik kartla odenis",
-			text: "Visa ve master kartlari ile odenis edin",
+			title: "Sürətli çatdırılma",
+			text: "Ölkə daxili istənilən yerə çatdırılma",
 			image: LocalShipping,
 		},
 		{
-			title: "Plastik kartla odenis",
-			text: "Visa ve master kartlari ile odenis edin",
+			title: "24/7 dəstək",
+			text: "Sifarişlərlə bağla tam dəstək",
 			image: SupportAgent,
 		},
 		{
-			title: "Plastik kartla odenis",
-			text: "Visa ve master kartlari ile odenis edin",
+			title: "Cəlbedici təkliflər",
+			text: "Marağlı aksiyalar və sərfəli endirimlər!",
 			image: Percent,
 		},
 	]);
