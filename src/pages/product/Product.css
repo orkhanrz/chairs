@@ -1,0 +1,125 @@
+.productPage {
+    margin: 96px 16px;
+}
+
+.productPageContent {
+    display: flex;
+    gap: 128px;
+}
+
+.productPageLeft {
+    flex: 5;
+}
+
+.productPageRight {
+    flex:  7;
+}
+
+.productImage {
+    margin: 0 0 16px 0;
+}
+
+.productImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productImagesContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.productImagesContainer img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.productTitle {
+    font-size: var(--fs-700);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 32px;
+}
+
+.productPrice {
+    font-weight: 600;
+    font-size: var(--fs-400);
+}
+
+.productInfoTop p,
+.productInfoMid p,
+.productInfoBottom p {
+    font-size: var(--fs-200);
+    color: var(--gray-clr);
+}
+
+.productInfoTop p, .productInfoMid p {
+    margin: 0 0 8px 0;
+}
+
+.productInfoTop, .productInfoMid, .productInfoBottom{
+    margin: 0 0 32px 0;
+}
+
+.productActions {
+    margin: 0 0 32px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.productActions input {
+    width: 60px;
+    height: 50px;
+    padding: 0 0 0 16px ;
+    border: 1px solid var(--gray-clr);
+    font-size: var(--fs-400);
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.productActions button {
+    height: 50px;
+    width: 200px;
+    background-color: var(--brown-clr);
+    border: 1px solid var(--brown-clr);
+    color: var(--white-clr);
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.productActions span {
+    border: 1px solid var(--gray-clr);
+    height: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    color: var(--gray-clr);
+    cursor: pointer;
+}
+
+.productSocial {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.productSocial span {
+    width: 30px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--light-gray-clr);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.productSocial span:hover {
+    color: var(--brown-clr);
+}

@@ -1,14 +1,15 @@
+import {Link} from 'react-router-dom';
 import "./Product.css";
 
 function Product({product}) {
 	return (
-		<div className="product">
-			<div className="productImageWrapper">
+		<Link to={`/products/${product.id}`} className="productItem">
+			<div className="productItemImageWrapper">
 				<img src={product.image} alt="" />
 			</div>
-			<p className="productModel">{product.model}</p>
-			<span className="productPrice">{product.price} ₼</span>
-		</div>
+			<p className="productItemModel">{product.model}</p>
+			<span className="productItemPrice">{product.price} ₼</span>
+		</Link>
 	);
 }
 

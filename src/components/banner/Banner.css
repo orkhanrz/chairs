@@ -1,0 +1,110 @@
+.banner {
+	height: calc(100vh - 97px);
+	display: flex;
+    align-items: center;
+	position: relative;
+}
+
+.banner h1 {
+	font-size: var(--fs-800);
+	margin: 0 0 32px 0;
+}
+
+.banner button {
+	background-color: var(--brown-clr);
+	color: var(--white-clr);
+	padding: 16px 32px;
+	border: 1px solid var(--brown-clr);
+	text-transform: uppercase;
+	font-size: var(--fs-200);
+	font-weight: 300;
+	letter-spacing: 1px;
+	cursor: pointer;
+	margin-left: 32px;
+}
+
+.bannerLeft, .bannerRight {
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+.bannerLeftContent, .bannerRightContent {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    margin: 0 16px;
+    transition: all 750ms ease;
+    opacity: 0;
+}
+
+.banner.active .bannerLeftContent {
+    top: 50%;
+    left: 50%;
+    animation: slideFromBottom 0.75s ease forwards;
+    opacity: 1;
+}
+
+.banner.active .bannerRightContent {
+    top: 50%;
+    left: 50%;
+    animation: slideFromTop 0.75s ease forwards;
+    opacity: 1;
+}
+
+.bannerLeftContent {
+    width: max-content;
+}
+
+.bannerRight {
+    background-color: var(--light-brown-clr);
+}
+
+.bannerRightContent img {
+    width: 100%;
+    height: auto;
+}
+
+.bannerControls {
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.bannerControls span {
+	font-size: var(--fs-700);
+	padding: 16px 20px;
+	cursor: pointer;
+}
+
+.bannerControlsLeft {
+	background-color: var(--brown-clr);
+	color: var(--white-clr);
+}
+
+.bannerControlsRight {
+	background-color: var(--white-clr);
+	color: var(--brown-clr);
+}
+
+@keyframes slideFromBottom {
+    from {
+        top: 100%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromTop {
+    from {
+        top: -50%;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}

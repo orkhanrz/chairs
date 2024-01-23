@@ -10,61 +10,73 @@ import Product from '../../components/product/Product';
 function Products() {
 	const [products] = useState([
 		{
+			id: 1,
 			image: "./assets/chair4.webp",
 			model: "Model SP-103",
 			price: 220.00,
 		},
 		{
+			id: 2,
 			image: "./assets/chair5.webp",
 			model: "Model SP-104",
 			price: 210.00,
 		},
 		{
+			id: 3,
 			image: "./assets/chair4.webp",
 			model: "Model SP-105",
 			price: 199.00,
 		},
 		{
+			id: 4,
 			image: "./assets/chair5.webp",
 			model: "Model SP-106",
 			price: 180.00,
 		},
 		{
+			id: 5,
 			image: "./assets/chair4.webp",
 			model: "Model SP-103",
 			price: 220.00,
 		},
 		{
+			id: 6,
 			image: "./assets/chair5.webp",
 			model: "Model SP-104",
 			price: 210.00,
 		},
 		{
+			id: 7,
 			image: "./assets/chair4.webp",
 			model: "Model SP-105",
 			price: 199.00,
 		},
 		{
+			id: 8,
 			image: "./assets/chair5.webp",
 			model: "Model SP-106",
 			price: 180.00,
 		},
 		{
+			id: 9,
 			image: "./assets/chair4.webp",
 			model: "Model SP-103",
 			price: 220.00,
 		},
 		{
+			id: 10,
 			image: "./assets/chair5.webp",
 			model: "Model SP-104",
 			price: 210.00,
 		},
 		{
+			id: 11,
 			image: "./assets/chair4.webp",
 			model: "Model SP-105",
 			price: 199.00,
 		},
 		{
+			id: 12,
 			image: "./assets/chair5.webp",
 			model: "Model SP-106",
 			price: 180.00,

@@ -5,21 +5,25 @@ import Product from "../product/Product";
 function HomeProducts({ mainTitle, secondaryTitle }) {
 	const [products] = useState([
 		{
+			id: 1,
 			image: "./assets/chair4.webp",
 			model: "Model SP-103",
 			price: 220.00,
 		},
 		{
+			id: 2,
 			image: "./assets/chair5.webp",
 			model: "Model SP-104",
 			price: 210.00,
 		},
 		{
+			id: 3,
 			image: "./assets/chair4.webp",
 			model: "Model SP-105",
 			price: 199.00,
 		},
 		{
+			id: 4,
 			image: "./assets/chair5.webp",
 			model: "Model SP-106",
 			price: 180.00,
@@ -33,7 +37,7 @@ function HomeProducts({ mainTitle, secondaryTitle }) {
 					<h1 className="mainTitle">{mainTitle}</h1>
 					<h2 className="secondaryTitle">{secondaryTitle}</h2>
 					<div className="productsList">
-						{products.map(product => <Product product={product}/>)}
+						{products.map(product => <Product key={product.id} product={product}/>)}
 					</div>
 				</div>
 			</div>
