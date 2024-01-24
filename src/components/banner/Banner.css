@@ -1,8 +1,15 @@
 .banner {
 	height: calc(100vh - 97px);
 	display: flex;
-    align-items: center;
+	align-items: center;
 	position: relative;
+	background: linear-gradient(
+		to right,
+		var(--white-clr) 0%,
+		var(--white-clr) 50%,
+		var(--light-brown-clr) 50%,
+		var(--light-brown-clr) 100%
+	);
 }
 
 .banner h1 {
@@ -23,45 +30,43 @@
 	margin-left: 32px;
 }
 
-.bannerLeft, .bannerRight {
-    flex: 1;
-    height: 100%;
-    position: relative;
+.bannerLeft,
+.bannerRight {
+	flex: 1;
+	position: relative;
 }
 
-.bannerLeftContent, .bannerRightContent {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    margin: 0 16px;
-    transition: all 750ms ease;
-    opacity: 0;
+.bannerLeftContent,
+.bannerRightContent {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	margin: 0 16px;
+	transition: all 750ms ease;
+	opacity: 0;
 }
 
 .banner.active .bannerLeftContent {
-    top: 50%;
-    left: 50%;
-    animation: slideFromBottom 0.75s ease forwards;
-    opacity: 1;
+	top: 50%;
+	left: 50%;
+	animation: slideFromBottom 0.75s ease forwards;
+	opacity: 1;
 }
 
 .banner.active .bannerRightContent {
-    top: 50%;
-    left: 50%;
-    animation: slideFromTop 0.75s ease forwards;
-    opacity: 1;
+	top: 50%;
+	left: 50%;
+	animation: slideFromTop 0.75s ease forwards;
+	opacity: 1;
 }
 
 .bannerLeftContent {
-    width: max-content;
-}
-
-.bannerRight {
-    background-color: var(--light-brown-clr);
+	width: max-content;
 }
 
 .bannerRightContent img {
-    width: 100%;
-    height: auto;
+	min-width: 200px;
+	width: 100%;
+	height: auto;
 }
 
 .bannerControls {
@@ -88,23 +93,83 @@
 }
 
 @keyframes slideFromBottom {
-    from {
-        top: 100%;
-        opacity: 0;
-    }
-    to {
-        top: 50%;
-        opacity: 1;
-    }
+	from {
+		top: 100%;
+		opacity: 0;
+	}
+	to {
+		top: 50%;
+		opacity: 1;
+	}
 }
 
 @keyframes slideFromTop {
-    from {
-        top: -50%;
-        opacity: 0;
-    }
-    to {
-        top: 50%;
-        opacity: 1;
+	from {
+		top: -50%;
+		opacity: 0;
+	}
+	to {
+		top: 50%;
+		opacity: 1;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.bannerLeftContent {
+		width: unset;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.banner h1 {
+		font-size: var(--fs-600);
+	}
+
+	.banner button {
+		padding: 8px 16px;
+		margin: 0;
+	}
+
+	.bannerControls {
+		bottom: 8px;
+	}
+
+	.bannerControls span {
+		font-size: var(--fs-600);
+		padding: 8px 12px;
+		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.banner {
+		flex-direction: column-reverse;
+		overflow: hidden;
+	}
+
+	.bannerLeft {
+		width: 100%;
+	}
+
+	.bannerLeftContent {
+		text-align: center;
+        top: 0;
+	}
+
+	.bannerRightContent {
+		margin: 0;
+		max-width: 250px;
+	}
+
+    @keyframes slideFromBottom {
+        from {
+            top: 100%;
+            opacity: 0;
+        }
+        to {
+            top: 0%;
+            opacity: 1;
+        }
     }
 }

@@ -59,3 +59,16 @@
 	filter: brightness(50%);
 	-webkit-filter: brightness(50%);
 }
+
+
+@media screen and (max-width: 768px) {
+	.productCategoriesList {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 480px) {
+    .productCategoriesList {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

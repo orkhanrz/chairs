@@ -115,3 +115,9 @@ footer .inputWrapper span:hover,
 footer .inputWrapper span:focus {
 	color: var(--light-gray-clr);
 }
+
+@media screen and (max-width: 768px) {
+	footer .row1 {
+		flex-direction: column;
+	}
+}

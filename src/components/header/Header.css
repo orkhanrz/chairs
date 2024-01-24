@@ -64,3 +64,95 @@ header {
 .headerRight span:hover, .headerRight span:focus {
     color: var(--brown-clr);
 }
+
+.burgerMenu {
+    display: none;
+}
+
+.mobileMenu {
+    position: absolute;
+    top: 96px;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: var(--white-clr);
+    transition: all 350ms ease;
+    opacity: 0;
+}
+
+.mobileMenu.active {
+    height: 100vh;
+    opacity: 1;
+}
+
+.mobileMenu.active .mobileMenuContent {
+    display: block;
+}
+
+
+.mobileMenuContent {
+    padding: 16px;
+    display: none;
+}
+
+.mobileMenuInputWrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray-clr);
+    margin-bottom: 32px;
+}
+
+.mobileMenuInputWrapper input {
+    flex: 1;
+    border: none;
+    font-size: var(--fs-200);
+    font-family: inherit;
+    padding: 12px;
+    outline: none;
+}
+
+.mobileMenuInputWrapper span {
+    padding: 8px;
+    color: var(--gray-clr);
+}
+
+.mobileMenuNav li {
+    margin-bottom: 32px;
+    font-size: var(--fs-200);
+}
+
+.mobileMenuNav li.active {
+    color: var(--brown-clr);
+}
+
+.mobileMenuPhone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+    border-block: 1px solid var(--light-gray-clr);
+}
+
+.mobileMenuPhone p {
+    font-size: var(--fs-200);
+}
+
+.mobileMenuPhone span {
+    font-size: var(--fs-400);
+}
+
+.mobileMenuSocial span {
+    font-size: var(--fs-400);
+    margin-right: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+   .headerNav, .searchIcon {
+        display: none;
+   }
+
+   .burgerMenu {
+        display: block;
+    }
+}

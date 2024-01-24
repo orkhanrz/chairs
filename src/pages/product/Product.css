@@ -123,3 +123,10 @@
 .productSocial span:hover {
     color: var(--brown-clr);
 }
+
+@media screen and (max-width: 768px) {
+    .productPageContent {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

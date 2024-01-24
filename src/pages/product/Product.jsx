@@ -2,7 +2,14 @@ import "./Product.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Icon } from "@mui/material";
-import { FacebookRounded, FavoriteBorder, LinkedIn, Pinterest, Reddit, Twitter } from "@mui/icons-material";
+import {
+	FacebookRounded,
+	FavoriteBorder,
+	LinkedIn,
+	Pinterest,
+	Reddit,
+	Twitter,
+} from "@mui/icons-material";
 
 function Product() {
 	return (
@@ -42,7 +49,7 @@ function Product() {
 								<p>Çəki: təqribən. 6 kq</p>
 							</div>
 							<div className="productActions">
-								<input type="number" defaultValue={1}/>
+								<input type="number" defaultValue={1} />
 								<button>SƏBƏTƏ ƏLAVƏ ET</button>
 								<span>
 									<Icon component={FavoriteBorder} />
@@ -53,13 +60,23 @@ function Product() {
 								<p>Brands: Tolix</p>
 								<p>Kateqoriya: Hamısı, TOLİX stullar</p>
 							</div>
-              <div className="productSocial">
-                <span><Icon component={FacebookRounded}/></span>
-                <span><Icon component={Twitter}/></span>
-                <span><Icon component={Pinterest}/></span>
-                <span><Icon component={LinkedIn}/></span>
-                <span><Icon component={Reddit}/></span>
-              </div>
+							<div className="productSocial">
+								<span>
+									<Icon component={FacebookRounded} />
+								</span>
+								<span>
+									<Icon component={Twitter} />
+								</span>
+								<span>
+									<Icon component={Pinterest} />
+								</span>
+								<span>
+									<Icon component={LinkedIn} />
+								</span>
+								<span>
+									<Icon component={Reddit} />
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>

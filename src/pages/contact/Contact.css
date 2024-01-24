@@ -69,6 +69,7 @@
     justify-content: space-evenly;
     background-color: var(--light-gray-clr);
     flex: 60%;
+    padding: 16px 0;
 }
 
 .contactDetailsRightItem {
@@ -88,4 +89,10 @@
 
 .contactDetailsRightItem p {
     font-size: var(--fs-200);
+}
+
+@media screen and (max-width: 768px) {
+    .contactDetailsContent {
+        flex-direction: column;
+    }
 }
