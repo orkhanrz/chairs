@@ -8,11 +8,11 @@
 }
 
 .productPageLeft {
-    flex: 5;
+    flex: 1;
 }
 
 .productPageRight {
-    flex:  7;
+    flex:  1;
 }
 
 .productImage {
@@ -91,16 +91,6 @@
     font-family: inherit;
     font-weight: 600;
     letter-spacing: 1px;
-    cursor: pointer;
-}
-
-.productActions span {
-    border: 1px solid var(--gray-clr);
-    height: 50px;
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    color: var(--gray-clr);
     cursor: pointer;
 }
 

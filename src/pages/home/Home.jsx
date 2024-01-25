@@ -15,10 +15,6 @@ function Home() {
 				mainTitle="YENİ MƏHSULLAR"
 				secondaryTitle="OTURACAQLAR"
 			/>
-			<HomeProducts
-				mainTitle="ƏN ÇOX SATILAN"
-				secondaryTitle="BAR STULLARI"
-			/>
 			<Footer />
 		</>
 	);

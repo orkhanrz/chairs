@@ -1,11 +1,14 @@
 import "./Products.css";
 import { Icon } from "@mui/material";
-import { ChevronRight, CloseFullscreen, KeyboardArrowDown, OpenInFull } from "@mui/icons-material";
+import {
+	ChevronRight,
+	KeyboardArrowDown,
+} from "@mui/icons-material";
 import { useState } from "react";
 
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import Product from '../../components/product/Product';
+import Product from "../../components/product/Product";
 
 function Products() {
 	const [products] = useState([
@@ -13,80 +16,80 @@ function Products() {
 			id: 1,
 			image: "./assets/chair4.webp",
 			model: "Model SP-103",
-			price: 220.00,
+			price: 220.0,
 		},
 		{
 			id: 2,
 			image: "./assets/chair5.webp",
 			model: "Model SP-104",
-			price: 210.00,
+			price: 210.0,
 		},
 		{
 			id: 3,
 			image: "./assets/chair4.webp",
 			model: "Model SP-105",
-			price: 199.00,
+			price: 199.0,
 		},
 		{
 			id: 4,
 			image: "./assets/chair5.webp",
 			model: "Model SP-106",
-			price: 180.00,
+			price: 180.0,
 		},
 		{
 			id: 5,
 			image: "./assets/chair4.webp",
 			model: "Model SP-103",
-			price: 220.00,
+			price: 220.0,
 		},
 		{
 			id: 6,
 			image: "./assets/chair5.webp",
 			model: "Model SP-104",
-			price: 210.00,
+			price: 210.0,
 		},
 		{
 			id: 7,
 			image: "./assets/chair4.webp",
 			model: "Model SP-105",
-			price: 199.00,
+			price: 199.0,
 		},
 		{
 			id: 8,
 			image: "./assets/chair5.webp",
 			model: "Model SP-106",
-			price: 180.00,
+			price: 180.0,
 		},
 		{
 			id: 9,
 			image: "./assets/chair4.webp",
 			model: "Model SP-103",
-			price: 220.00,
+			price: 220.0,
 		},
 		{
 			id: 10,
 			image: "./assets/chair5.webp",
 			model: "Model SP-104",
-			price: 210.00,
+			price: 210.0,
 		},
 		{
 			id: 11,
 			image: "./assets/chair4.webp",
 			model: "Model SP-105",
-			price: 199.00,
+			price: 199.0,
 		},
 		{
 			id: 12,
 			image: "./assets/chair5.webp",
 			model: "Model SP-106",
-			price: 180.00,
+			price: 180.0,
 		},
 	]);
 
 	return (
 		<>
 			<Header />
-			<main className="products">
+			<main className="productsPage">
 				<div className="container">
 					<div className="productsContent">
 						<div className="pageMap">
@@ -102,49 +105,59 @@ function Products() {
 							</div>
 						</div>
 						<h1 className="productsTitle">STULLAR</h1>
-						<div className="productsInfoBar">
-							<div className="productsInfoBarLeft">
-								<p className="productsInfoBarLeftItem">
-									<b>16</b> məhsul
-								</p>
-								<span className="productsInfoBarLeftItemDivider">
-									|
-								</span>
-								<p className="productsInfoBarLeftItem">
-									Yaxın{" "}
-									<span className="productsInfoBarLeftItemResize">
+						<div className="productsContainer">
+							<div className="products">
+								{products.map((product) => (
+									<Product product={product} />
+								))}
+							</div>
+							<div className="productsInfoBar">
+								<div className="productsInfoBarItem">
+									<p>KATEQORİYA</p>
+									<span>
 										<Icon
-											component={CloseFullscreen}
+											component={KeyboardArrowDown}
 											fontSize="inherit"
 										/>
 									</span>
-								</p>
-							</div>
-							<div className="productsInfoBarRight">
-								<div className="productsInfoBarRightItem">
-									<p>KATEQORİYA</p>
-									<span><Icon component={KeyboardArrowDown} fontSize="inherit"/></span>
 								</div>
-								<div className="productsInfoBarRightItem">
+								<div className="productsInfoBarItem">
 									<p>QİYMƏT</p>
-									<span><Icon component={KeyboardArrowDown} fontSize="inherit"/></span>
+									<span>
+										<Icon
+											component={KeyboardArrowDown}
+											fontSize="inherit"
+										/>
+									</span>
 								</div>
-								<div className="productsInfoBarRightItem">
+								<div className="productsInfoBarItem">
 									<p>RƏNG</p>
-									<span><Icon component={KeyboardArrowDown} fontSize="inherit"/></span>
+									<span>
+										<Icon
+											component={KeyboardArrowDown}
+											fontSize="inherit"
+										/>
+									</span>
 								</div>
-								<div className="productsInfoBarRightItem">
+								<div className="productsInfoBarItem">
 									<p>MATERİAL</p>
-									<span><Icon component={KeyboardArrowDown} fontSize="inherit"/></span>
+									<span>
+										<Icon
+											component={KeyboardArrowDown}
+											fontSize="inherit"
+										/>
+									</span>
 								</div>
-								<div className="productsInfoBarRightItem productsInfoBarRightItemDiff">
+								<div className="productsInfoBarItem">
 									<p>UCUZDAN BAHAYA</p>
-									<span><Icon component={KeyboardArrowDown} fontSize="inherit"/></span>
+									<span>
+										<Icon
+											component={KeyboardArrowDown}
+											fontSize="inherit"
+										/>
+									</span>
 								</div>
 							</div>
-						</div>
-						<div className="productsList">
-							{products.map(product => <Product product={product}/>)}
 						</div>
 					</div>
 				</div>

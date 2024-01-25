@@ -4,7 +4,6 @@ import Footer from "../../components/footer/Footer";
 import { Icon } from "@mui/material";
 import {
 	FacebookRounded,
-	FavoriteBorder,
 	LinkedIn,
 	Pinterest,
 	Reddit,
@@ -51,9 +50,6 @@ function Product() {
 							<div className="productActions">
 								<input type="number" defaultValue={1} />
 								<button>SƏBƏTƏ ƏLAVƏ ET</button>
-								<span>
-									<Icon component={FavoriteBorder} />
-								</span>
 							</div>
 							<div className="productInfoBottom">
 								<p>Məhsul: Stokdadır</p>

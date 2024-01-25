@@ -26,17 +26,6 @@ function Contact() {
 	return (
 		<>
 			<Header />
-			<section className="map">
-				<div className="container">
-					<GoogleMap
-						mapContainerStyle={{ width: "100%", height: "500px" }}
-						zoom={16}
-						center={center}
-					>
-						<MarkerF position={center} />
-					</GoogleMap>
-				</div>
-			</section>
 			<section className="contactDetails">
 				<div className="container">
 					<div className="contactDetailsContent">
@@ -90,6 +79,17 @@ function Contact() {
                             </div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section className="map">
+				<div className="container">
+					<GoogleMap
+						mapContainerStyle={{ width: "100%", height: "500px" }}
+						zoom={16}
+						center={center}
+					>
+						<MarkerF position={center} />
+					</GoogleMap>
 				</div>
 			</section>
 			<Footer />
