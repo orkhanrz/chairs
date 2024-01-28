@@ -1,7 +1,11 @@
 import "./Contact.css";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
 import { Icon } from "@mui/material";
-import { EmailOutlined, HomeOutlined, LocalPhoneOutlined } from "@mui/icons-material";
+import {
+	EmailOutlined,
+	HomeOutlined,
+	LocalPhoneOutlined,
+} from "@mui/icons-material";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 
@@ -26,70 +30,77 @@ function Contact() {
 	return (
 		<>
 			<Header />
+			<section className="map">
+				<GoogleMap
+					mapContainerStyle={{ width: "inherit", height: "inherit" }}
+					zoom={16}
+					center={center}
+				>
+					<MarkerF position={center} />
+				</GoogleMap>
+			</section>
 			<section className="contactDetails">
-				<div className="container">
-					<div className="contactDetailsContent">
-						<div className="contactDetailsLeft">
-							<h1>Sualınız varsa, bizə yazın</h1>
-							<form action="">
-								<div className="formControl">
-									<input
-										type="text"
-										placeholder="Ad və Soyad"
-										id="fullname"
-									/>
-									<input
-										type="email"
-										placeholder="Email"
-										id="email"
-									/>
-								</div>
-								<div className="formControl">
-									<input
-										type="text"
-										placeholder="Mövzü"
-										id="subject"
-									/>
-								</div>
-								<div className="formControl">
-									<textarea
-										name=""
-										id=""
-										placeholder="Mətn"
-									></textarea>
-								</div>
-								<button type="submit">GÖNDƏR</button>
-							</form>
+				<div className="contactDetailsLeft">
+					<div className="formControl">
+						<textarea
+							name="message"
+							id="message"
+							placeholder="Mətn"
+							rows={10}
+						></textarea>
+					</div>
+					<div className="formControl">
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Ad və Soyad"
+						/>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Email"
+						/>
+					</div>
+					<button>Göndər</button>
+				</div>
+				<div className="contactDetailsRight">
+					<h1 className="contactDetailsRightTitle">Əlaqə saxla</h1>
+					<p className="contactDetailsRightText">
+						Lorem ipsum dolor, sit amet consectetur adipisicing
+						elit. Placeat maiores sapiente, suscipit amet minus
+						porro itaque adipisci deleniti quidem odit.
+					</p>
+					<div className="contactDetailsRightInfo">
+						<div className="contactDetailsRightInfoItem">
+							<span>
+								<Icon
+									component={EmailOutlined}
+									fontSize="inherit"
+								/>
+							</span>
+							<p>info@info.az</p>
 						</div>
-						<div className="contactDetailsRight">
-							<div className="contactDetailsRightItem">
-                                <span><Icon component={HomeOutlined} fontSize="inherit"/></span>
-                                <h1>ÜNVAN</h1>
-                                <p>Salatın Əsgərova 156</p>
-                            </div>
-                            <div className="contactDetailsRightItem">
-                                <span><Icon component={LocalPhoneOutlined} fontSize="inherit"/></span>
-                                <h1>ƏLAQƏ NÖMRƏMİZ</h1>
-                                <p>+994 51 678 00 98</p>
-                            </div>
-                            <div className="contactDetailsRightItem">
-                                <span><Icon component={EmailOutlined} fontSize="inherit"/></span>
-                                <h1>EMAIL</h1>
-                                <p>info@info.az</p>
-                            </div>
+						<div className="contactDetailsRightInfoItem">
+							<span>
+								<Icon
+									component={HomeOutlined}
+									fontSize="inherit"
+								/>
+							</span>
+							<p>Salatin Asgarova 156</p>
+						</div>
+						<div className="contactDetailsRightInfoItem">
+							<span>
+								<Icon
+									component={LocalPhoneOutlined}
+									fontSize="inherit"
+								/>
+							</span>
+							<p>+994 51 678 00 98</p>
 						</div>
 					</div>
-				</div>
-			</section>
-			<section className="map">
-				<div className="container">
-					<GoogleMap
-						mapContainerStyle={{ width: "100%", height: "500px" }}
-						zoom={16}
-						center={center}
-					>
-						<MarkerF position={center} />
-					</GoogleMap>
 				</div>
 			</section>
 			<Footer />
