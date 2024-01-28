@@ -1,98 +1,98 @@
 .map {
     width: 100%;
-    height: 500px;
-    padding: 32px 0;
-    margin-bottom: 32px;
+    height: 600px;
+    margin-bottom: 48px;
 }
 
 .contactDetails {
-    margin: 0 16px 32px 16px;
-}
-
-.contactDetailsContent {
-    padding: 32px 0;
-    display: flex;
-    gap: 80px;
-}
-
-.contactDetailsLeft {
-    flex: 40%;
-}
-
-.contactDetailsLeft h1 {
-    font-size: var(--fs-200);
-    letter-spacing: 1px;
-    margin-bottom: 32px;
-    font-weight: 600;
-}
-
-.contactDetails .formControl {
-    margin-bottom: 16px;
-}
-
-.contactDetails .formControl:first-child {
-    display: flex;
-    gap: 16px;
-}
-
-.contactDetails input, .contactDetails textarea {
-    box-sizing: border-box;
+    max-width: 1200px;
     width: 100%;
-    padding: 16px;
-    border: 1px solid var(--gray-clr);
-    font-family: inherit;
-    font-size: var(--fs-200);
-    outline: none;
+    margin: 16px auto 64px auto;
 }
 
-.contactDetails button {
-    padding: 16px;
-    background-color: var(--brown-clr);
-    color: var(--white-clr);
-    border: 1px solid var(--brown-clr);
-    letter-spacing: 1px;
-    font-size: var(--fs-200);
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 250ms ease;
-}
-
-.contactDetails button:hover {
-    background-color: var(--white-clr);
-    border: 1px solid var(--brown-clr);
-    color: var(--brown-clr);
-}
-
-.contactDetailsRight {
+.contactDetailsInfo {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--light-gray-clr);
-    flex: 60%;
-    padding: 16px 0;
 }
 
-.contactDetailsRightItem {
+.contactDetailsInfo p {
+    margin-left: -32px;
+    font-size: var(--fs-400);
+    line-height: var(--fs-700);
+}
+
+.contactDetails h1 {
     text-align: center;
+    font-size: var(--fs-700);
 }
 
-.contactDetailsRightItem span {
-    font-size: 40px;
+.contactDetailsLeft {
+    flex: 60%;
 }
 
-.contactDetailsRightItem h1 {
-    font-size: var(--fs-300);
-    letter-spacing: 1px;
-    font-weight: 700;
-    margin: 8px 0 32px 0;
+.contactDetailsRight {
+    flex: 40%;
 }
 
-.contactDetailsRightItem p {
+.contactDetails .formControl {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.contactDetails input, .contactDetails textarea {
+    width: 100%;
+    padding: 8px;
+    outline: none;
+    font-family: inherit;
     font-size: var(--fs-200);
 }
 
-@media screen and (max-width: 768px) {
-    .contactDetailsContent {
-        flex-direction: column;
-    }
+.contactDetails textarea {
+    border: 1px solid var(--gray-clr);
+}
+
+.contactDetails input {
+    border: none;
+    border-bottom: 1px solid var(--gray-clr);
+}
+
+.contactDetails button {
+    background-color: var(--white-clr);
+    border: 1px solid var(--gray-clr);
+    padding: 8px 32px;
+    font-family: inherit;
+    font-weight: 600;
+    margin-top: 16px;
+}
+
+.contactDetailsRightTitle {
+    font-size: var(--fs-600);
+    font-weight: 600;
+    margin: 0 0 32px 0;
+}
+
+.contactDetailsRightText {
+    color: var(--gray-clr);
+    margin: 0 0 48px 0;
+}
+
+.contactDetailsRightInfoItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: var(--gray-clr);
+}
+
+.contactDetailsRightInfoItem p {
+    font-size: var(--fs-400);
+    margin: 0;
+}
+
+.contactDetailsRightInfoItem span {
+    width: 32px;
+    height: 32px;
+    font-size: var(--fs-700);
 }

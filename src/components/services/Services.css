@@ -1,35 +1,36 @@
 .aboutServices {
-    margin: 64px 16px;
+	margin: 64px 16px;
 }
 
 .aboutServicesTitle {
-    text-align: center;
-    font-size: var(--fs-600);
-    margin-bottom: 48px;
+	text-align: center;
+	font-size: var(--fs-600);
+	margin-bottom: 48px;
 }
 
 .aboutServicesList {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 16px;
 }
 
 .aboutServicesItem {
-    text-align: center;
+	text-align: center;
 }
 
 .aboutServicesItem span {
-    font-size: var(--fs-900);
-    color: var(--gray-clr);
+	font-size: var(--fs-900);
+	color: var(--gray-clr);
 }
 
 .aboutServicesItem h3 {
-    font-size: var(--fs-400);
-    font-weight: 600;
-    margin: 16px 0;
+	font-size: var(--fs-400);
+	font-weight: 600;
+	margin: 16px 0;
 }
 
 .aboutServicesItem p {
-    font-size: var(--fs-200);
-    color: var(--gray-clr);
+	font-size: var(--fs-200);
+	color: var(--gray-clr);
 }
