@@ -39,14 +39,14 @@
 .bannerLeftContent,
 .bannerRightContent {
 	position: absolute;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -60%);
 	margin: 0 16px;
 	transition: all 750ms ease;
 	opacity: 0;
 }
 
 .banner.active .bannerLeftContent {
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	animation: slideFromBottom 0.75s ease forwards;
 	opacity: 1;
@@ -70,26 +70,27 @@
 }
 
 .bannerControls {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 	position: absolute;
-	bottom: 16px;
+	bottom: 50%;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
 .bannerControls span {
-	font-size: var(--fs-700);
+	font-size: var(--fs-800);
 	padding: 16px 20px;
 	cursor: pointer;
 }
 
 .bannerControlsLeft {
-	background-color: var(--brown-clr);
-	color: var(--white-clr);
+	color: var(--brown-clr);
 }
 
 .bannerControlsRight {
-	background-color: var(--white-clr);
-	color: var(--brown-clr);
+	color: var(--white-clr);
 }
 
 @keyframes slideFromBottom {
