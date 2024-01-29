@@ -6,25 +6,25 @@ function HomeProducts({ mainTitle, secondaryTitle }) {
 	const [products] = useState([
 		{
 			id: 1,
-			image: "./assets/chair4.webp",
+			image: "/assets/floria-kollu-40.png",
 			model: "Model SP-103",
 			price: 220.00,
 		},
 		{
 			id: 2,
-			image: "./assets/chair5.webp",
+			image: "/assets/floria-kolsuz-ps.49.png",
 			model: "Model SP-104",
 			price: 210.00,
 		},
 		{
 			id: 3,
-			image: "./assets/chair4.webp",
+			image: "/assets/luna-by-kr-38.png",
 			model: "Model SP-105",
 			price: 199.00,
 		},
 		{
 			id: 4,
-			image: "./assets/chair5.webp",
+			image: "/assets/luna-sy-kh.299.png",
 			model: "Model SP-106",
 			price: 180.00,
 		},

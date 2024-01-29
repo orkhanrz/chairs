@@ -20,15 +20,15 @@ function Product() {
 					<div className="productPageContent">
 						<div className="productPageLeft">
 							<div className="productImage">
-								<img src="/assets/chair1.png" alt="" />
+								<img src="/assets/floria-kollu-bsy.39.png" alt="" />
 							</div>
 							<div className="productImages">
 								<div className="productImagesContainer">
-									<img src="/assets/chair1.png" alt="" />
-									<img src="/assets/chair2.png" alt="" />
-									<img src="/assets/chair3.png" alt="" />
-									<img src="/assets/chair4.webp" alt="" />
-									<img src="/assets/chair5.webp" alt="" />
+									<img src="/assets/floria-kollu-kh.37.png" alt="" />
+									<img src="/assets/floria-kollu-kr.34.png" alt="" />
+									<img src="/assets/floria-kollu-mr.35.png" alt="" />
+									<img src="/assets/floria-kollu-mv.33.png" alt="" />
+									<img src="/assets/floria-kollu-pb.36.png" alt="" />
 								</div>
 								<div className="productImagesControls"></div>
 							</div>

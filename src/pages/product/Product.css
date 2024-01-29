@@ -4,18 +4,11 @@
 
 .productPageContent {
     display: flex;
-    gap: 128px;
-}
-
-.productPageLeft {
-    flex: 5;
-}
-
-.productPageRight {
-    flex:  7;
+    gap: 64px;
 }
 
 .productImage {
+    max-width: 500px;
     margin: 0 0 16px 0;
 }
 
@@ -27,8 +20,8 @@
 
 .productImagesContainer {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(5, 100px);
+    gap: 8px;
 }
 
 .productImagesContainer img {

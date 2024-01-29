@@ -25,6 +25,7 @@ header {
 	border-radius: 50%;
     border: 1px solid var(--brown-clr);
     margin-left: 56px;
+	cursor: pointer;
 }
 
 .headerLogo:hover,

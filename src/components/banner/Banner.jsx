@@ -5,19 +5,19 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 const chairs = [
 	{
-        id: 1,
+		id: 1,
 		title: "Keyfiyyətli materiallar",
-		image: "./assets/chair1.png",
+		image: "./assets/luna-by-kr-38.png",
 	},
 	{
-        id: 2,
+		id: 2,
 		title: "Modern dizayn",
-		image: "./assets/chair2.png",
+		image: "./assets/monaco-kllu-54.png",
 	},
 	{
-        id: 3,
+		id: 3,
 		title: "Yeni kolleksiya",
-		image: "./assets/chair3.png",
+		image: "./assets/picnic-byz_0001_picnic-ysl_69.png",
 	},
 ];
 
@@ -35,11 +35,9 @@ function Banner() {
 		setTimeout(() => {
 			setChairActive(true);
 		}, 500);
-	}
+	};
 
-	function changeChair(action) {
-		animateChair();
-
+	function updateChair(action){
 		setChairIndex((prevState) => {
 			if (
 				prevState >= 0 &&
@@ -65,6 +63,14 @@ function Banner() {
 				return chairs.length - 1;
 			}
 		});
+	}
+
+	function changeChair(action) {
+		animateChair();
+
+		setTimeout(() => {
+			updateChair(action);
+		}, 550);
 	}
 
 	return (

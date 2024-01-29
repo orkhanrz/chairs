@@ -11,14 +11,7 @@ function Home() {
 			<Header />
 			<Banner />
 			<Categories />
-			<HomeProducts
-				mainTitle="YENİ MƏHSULLAR"
-				secondaryTitle="OTURACAQLAR"
-			/>
-			<HomeProducts
-				mainTitle="ƏN ÇOX SATILAN"
-				secondaryTitle="BAR STULLARI"
-			/>
+			<HomeProducts mainTitle="YENİ MƏHSULLAR" secondaryTitle="OTURACAQLAR" />
 			<Footer />
 		</>
 	);
